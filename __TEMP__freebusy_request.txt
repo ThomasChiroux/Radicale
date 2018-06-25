@@ -1,0 +1,28 @@
+Radicale request response:
+
+[7fd329a63ae8] DEBUG: Request content:
+<?xml version="1.0"?>
+<C:free-busy-query xmlns:C="urn:ietf:params:xml:ns:caldav">
+  <C:time-range end="20070715T170000Z" start="20070713T170000Z" />
+</C:free-busy-query>
+
+[7fd329a63ae8] DEBUG: Response content:
+<?xml version="1.0"?>
+<multistatus xmlns="DAV:">
+  <response>
+    <href>/6311712270fc4615a902120cf770bebd/f85a1780740a48fa936c65321eb34523/20010712T182145Z-123402%40example.com.ics</href>
+  </response>
+</multistatus>
+
+
+
+
+QUERY: report, URL:http://172.18.0.1:5232/caldav.php/admin/239caf7b06d3451fa716926c7d1cc424/, BODY:b'
+<?xml version=\'1.0\' encoding=\'utf-8\'?>\n
+<C:free-busy-query xmlns:C="urn:ietf:params:xml:ns:caldav" xmlns:D="DAV" xmlns:I="http://apple.com/ns/ical/">
+<C:time-range start="20070713T170000Z" end="20070715T170000Z"/>
+</C:free-busy-query>'
+
+REsponse Content:
+
+b'BEGIN:VCALENDAR\r\nPRODID:-//davical.org//NONSGML AWL Calendar//EN\r\nVERSION:2.0\r\nCALSCALE:GREGORIAN\r\nBEGIN:VFREEBUSY\r\nDTSTAMP:20180625T145054Z\r\nDTSTART:20070713T170000Z\r\nDTEND:20070715T170000Z\r\nFREEBUSY:20070714T170000Z/20070715T040000Z\r\nEND:VFREEBUSY\r\nEND:VCALENDAR\r\n'
